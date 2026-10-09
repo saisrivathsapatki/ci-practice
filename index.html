@@ -1,4 +1,15 @@
-<h1>Hello from Sai!</h1>
-<p>Version 4</p>
+<p>Version 5</p>
+
+<input id="a" type="number" placeholder="First number">
+<input id="b" type="number" placeholder="Second number">
+<button onclick="doAdd()">Add</button>
+<p id="result">Result will show here</p>
 
 <script src="math.js"></script>
+<script>
+  function doAdd() {
+    const a = Number(document.getElementById("a").value);
+    const b = Number(document.getElementById("b").value);
+    document.getElementById("result").textContent = "Result: " + add(a, b);
+  }
+</script>
